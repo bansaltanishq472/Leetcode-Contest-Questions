@@ -20,6 +20,7 @@ bool Determine_If_Two_Strings_Are_Close(string &s1, string &s2) {
 		if ((f1[i] == 0 && f2[i] != 0) || (f1[i] != 0 && f2[i] == 0)) {
 			return false;
 		}
+		if (mp1[f1[i]] != mp2[f1[i]]) return false;
 	}
 	return true;
 }
